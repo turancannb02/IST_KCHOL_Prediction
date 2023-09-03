@@ -4,7 +4,7 @@ import seaborn as sns
 from sklearn.linear_model import LinearRegression
 
 # Load the data
-data = pd.read_excel("/Users/turanbuyukkamaci/Downloads/untitled folder/cleaned_data.xlsx", engine="openpyxl")
+data = pd.read_excel("cleaned_data.xlsx", engine="openpyxl")
 data['Date'] = pd.to_datetime(data['Date'])
 
 # Convert 'Date' to numeric (days since the start)
